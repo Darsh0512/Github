@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>DK's GYM</title>
+</head>
+<link href="https://fonts.googleapis.com/css?family=Warnes&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="CSS/style.css">
+<style>
+    * {
+        color: greenyellow;
+    }
+
+    body {
+        /* CSS Reset */
+        font-family: 'Warnes', cursive;
+        margin: 0px;
+        padding: 0px;
+        background: url('IMG/bg4.jpg');
+        height: 1282px;
+
+    }
+
+    .left {
+        /* color: white; */
+        /* border: 2px solid red; */
+        display: inline;
+        position: absolute;
+        top: 20px;
+        left: 35px;
+    }
+
+    .left img {
+        width: 81px;
+        /* filter: invert(0%) */
+    }
+
+    .left div {
+        text-align: center;
+        font-size: 16px;
+        line-height: 10px;
+        margin: -5px;
+    }
+
+    .mid {
+        display: block;
+        margin: 20px auto;
+        width: 50%;
+        color: white;
+        /* border: 2px solid yellow; */
+        text-align: center;
+        padding: 2px 2px;
+        padding-right: 45px;
+    }
+
+    .right {
+        display: inline-block;
+        position: absolute;
+        top: 20px;
+        right: 35px;
+        /* color: white; */
+        /* border: 2px solid green; */
+    }
+
+    .navbar {
+        display: inline-block;
+    }
+
+    .navbar li {
+        list-style: none;
+        display: inline-block;
+
+    }
+
+    .navbar li a {
+        text-decoration: none;
+        padding: 4px 20px;
+        color: gray;
+    }
+
+    .navbar li a:hover {
+        color: #adaba9;
+    }
+
+    .btn {
+        border-radius: 15px;
+        font-family: 'Warnes', cursive;
+        background: transparent;
+        color: white;
+        cursor: pointer;
+    }
+
+    button:hover {
+        color: gray;
+    }
+
+    .container {
+        display: block;
+        margin: 100px 80px;
+        border: 2px dotted cornsilk;
+        width: 40%;
+        padding: 47px 12px;
+        border-radius: 20px;
+    }
+
+    .container h3 {
+        text-align: center;
+        font-size: 30px;
+
+    }
+
+
+
+    .container button {
+        width: 400px;
+        display: block;
+        margin: 10px auto;
+        border-radius: 7px;
+        font-size: 25px;
+    }
+
+    .form-group input {
+        display: block;
+        width: 400px;
+        margin: 5px auto;
+        text-align: center;
+        font-size: 25px;
+        padding: 1px;
+        border: 1px solid black;
+        border-radius: 7px;
+        color: black;
+    }
+</style>
+
+<body>
+    <header class="header">
+        <!-- left box for logo -->
+        <div class="left">
+            <img src="IMG/gym-1048852_1280.png" alt="">
+            <div>DK's GYM</div>
+        </div>
+        <!-- mid box for navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact us</a></li>
+            </ul>
+        </div>
+        <!-- right box for buttons -->
+        <div class="right">
+            <button class="btn">Contact Us now</button>
+            <button class="btn">Email Us</button>
+        </div>
+        <div class="container">
+            <form action="backend.php">
+                <h3>Join the best GYM of Saoner</h3>
+                <div class="form-group">
+                    <input type="text" placeholder="Enter your Name">
+                </div>
+                <div class="form-group">
+                    <input type="text" placeholder="Enter your Age">
+                </div>
+                <div class="form-group">
+                    <input type="text" placeholder="Enter your Gender">
+                </div>
+                <div class="form-group">
+                    <input type="text" placeholder="Enter your Weight">
+                </div>
+                <button class="btn">Submit</button>
+            </form>
+        </div>
+    </header>
+</body>
+
+</html>
